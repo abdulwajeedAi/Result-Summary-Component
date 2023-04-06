@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto+Slab:wght@400;700&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Hanken Grotesk', sans-serif;
+
+
+
+    }
+
+    body {}
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      width: 620px;
+      background-color: whitesmoke;
+      height: 450px;
+      border-radius: 30px;
+      display: flex;
+      margin: auto;
+      margin-top: 250px;
+
+
+    }
+
+    .dashboard {
+      height: 450px;
+      width: 310px;
+
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      border-radius: 30px;
+    }
+
+    .result {
+      text-align: center;
+      padding-top: 30px;
+      color: rgba(255, 255, 255, 0.671);
+    }
+
+    .about__result {
+      text-align: center;
+      margin-top: 22px;
+      color: white;
+
+    }
+
+    .para {
+      padding: 10px 43px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.452);
+    }
+
+    .score {
+      color: white;
+      text-align: center;
+
+      margin: auto;
+      margin-top: 25px;
+      background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+
+    }
+
+    .marks {
+      font-size: 50px;
+      padding-top: 30px;
+
+    }
+
+    .outof {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.534);
+    }
+
+    .summary {
+      margin-top: 30px;
+      margin-left: 20px;
+      font-size: 23px;
+      color: rgba(0, 0, 0, 0.747);
+    }
+
+    .reaction {
+      color: hsl(0, 100%, 67%);
+      font-size: 18px;
+      background-color: hsla(0, 100%, 67%, 0.103);
+      padding: 15px;
+      border-radius: 15px;
+      width: 220px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      margin-top: 22px;
+    }
+
+    .memory {
+      color: hsl(39, 100%, 56%);
+      font-size: 18px;
+      background-color: hsl(39, 100%, 56%, 0.103);
+      padding: 15px;
+      border-radius: 15px;
+      width: 220px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .verbal {
+      color: hsl(166, 100%, 37%);
+      font-size: 18px;
+      background-color: hsl(166, 100%, 37%, 0.103);
+      padding: 15px;
+      border-radius: 15px;
+      width: 220px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .visual {
+      color: hsl(234, 85%, 45%);
+      font-size: 18px;
+      background-color: hsla(234, 85%, 45%, 0.103);
+      padding: 15px;
+      border-radius: 15px;
+      width: 220px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 252px;
+      border-radius: 30px;
+      background-color: hsl(224, 30%, 27%);
+      padding: 12px;
+      color: white;
+      font-size: 18px;
+      border: 2px solid hsl(224, 30%, 27%);
+      cursor: pointer;
+    }
+
+    .span1 {
+      color: black;
+      padding-left: 50px;
+    }
+
+    .span2 {
+      color: rgba(0, 0, 0, 0.616);
+    }
+
+    .space {
+      padding-left: 68px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="dashboard">
+      <h2 class="result"> Your Result
+      </h2>
+      <div class="score">
+
+        <h1 class="marks">76</h1>
+        <h2 class="outof">of 100</h2>
+      </div>
+
+
+      <div class="about__result">
+        <h1>Great</h1>
+        <p class="para">
+
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+    </div>
+    <div class="flexbox">
+
+      <div class="top">
+
+        <h2 class="summary">
+          Summary
+
+        </h2>
+      </div>
+      <div class="items">
+
+        <div class="reaction">
+          <img src="/assets/images/icon-reaction.svg" alt="">
+          Reaction
+          <span class="span1">
+
+            80
+          </span>
+          <span class="span2">/ 100</span>
+        </div>
+        <div class="memory">
+          <img src="/assets/images/icon-memory.svg" alt="">
+          Memory
+          <span class="span1">
+
+            92
+          </span>
+          <span class="span2">/ 100</span>
+        </div>
+        <div class="verbal">
+          <img src="/assets/images/icon-verbal.svg" alt="">
+          Verbal
+          <span class="span1 space">
+
+            61
+          </span>
+          <span class="span2">/ 100</span>
+        </div>
+        <div class="visual">
+          <img src="/assets/images/icon-visual.svg" alt="">
+          Visual
+          <span class="span1 space">
+
+            72
+          </span>
+          <span class="span2">/ 100</span>
+        </div>
+        <button class="btn">
+          Continue
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">abdul wajeed</a>.
+  </div>
+</body>
+
+</html>
