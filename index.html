@@ -79,7 +79,7 @@
 
       margin: auto;
       margin-top: 25px;
-      background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
       border-radius: 50%;
       height: 150px;
       width: 150px;
@@ -173,6 +173,17 @@
 
     .space {
       padding-left: 68px;
+    }
+
+    @media (max-width:1000px) {
+      .container{
+        flex-direction: column;
+        width: 310px;
+        height: 900px;
+      }
+    }
+    .attribution{
+      margin-top: 20px;
     }
   </style>
 </head>
